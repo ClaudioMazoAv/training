@@ -1,0 +1,73 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('maz_esc.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor {
+  background-color: rgba(0, 0, 0, 0.85);
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #000;
+}
+
+h1 {
+  text-align: center;
+  color: #00ffff;
+}
+
+.autores {
+  text-align: center;
+  font-style: italic;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.intro {
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #00cccc;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00aaaa;
+}
+
+#resultado, #explicacion {
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+}

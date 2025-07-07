@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadora de las Leyes de Newton</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Calculadora de las Leyes de Newton</h1>
+    <p class="autores">Autores: Escobar - Mazo</p>
+    <p class="intro">
+      Bienvenidos/as a la calculadora de Leyes de Newton. Este programa te servirá de apoyo para realizar la autoevaluación de los ejercicios que tu profe te haya dado en clase.
+    </p>
+
+    <form id="formulario">
+      <label>Masa del objeto (kg):</label>
+      <input type="number" id="masa" required>
+
+      <label>Ángulo de inclinación (°):</label>
+      <input type="number" id="angulo" required>
+
+      <label>Fuerza aplicada (N):</label>
+      <input type="number" id="fuerza" required>
+
+      <label>Coeficiente de fricción (μ):</label>
+      <input type="number" id="friccion" step="0.01" required>
+
+      <label>Dirección del empuje:</label>
+      <select id="direccion">
+        <option value="horizontal">Horizontal</option>
+        <option value="inclinada">Sobre un plano inclinado</option>
+      </select>
+
+      <button type="button" onclick="calcularNewton()">Calcular</button>
+    </form>
+
+    <div id="resultado"></div>
+    <div id="explicacion"></div>
+
+    <button id="reiniciar" onclick="reiniciarFormulario()">🔄 Reiniciar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
